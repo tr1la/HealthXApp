@@ -188,148 +188,148 @@ object Utils {
         val mapOfDiseasesList: HashMap<String, ArrayList<String>> = HashMap()
 
         val specialistsAndDiseases = listOf(
-            "Allergists" to arrayOf(
-                "Not sure",
-                "Asthma",
-                "Skin Allergies",
-                "Vomiting or diarrhea",
-                "Drop in blood pressure",
-                "Redness of the skin and/or hives",
-                "Difficulty breathing",
-                "Swelling of the throat and/or tongue"
+            "Bác sĩ dị ứng" to arrayOf(
+                "Không chắc chắn",
+                "Hen suyễn",
+                "Dị ứng da",
+                "Nôn hoặc tiêu chảy",
+                "Tụt huyết áp",
+                "Da đỏ và/hoặc nổi mề đay",
+                "Khó thở",
+                "Sưng họng và/hoặc lưỡi"
             ),
-            "Anesthesiologists" to arrayOf(
-                "Not sure",
-                "Back pain or muscle pain",
-                "Chills caused by low body temperature",
-                "Difficulty urinating",
-                "Fatigue",
-                "Headache",
-                "Itching",
-                "Infectious arthritis"
+            "Bác sĩ gây mê" to arrayOf(
+                "Không chắc chắn",
+                "Đau lưng hoặc đau cơ",
+                "Ớn lạnh do nhiệt độ cơ thể thấp",
+                "Khó tiểu",
+                "Mệt mỏi",
+                "Đau đầu",
+                "Ngứa",
+                "Viêm khớp nhiễm trùng"
             ),
-            "Cardiologist" to arrayOf(
-                "Not sure",
-                "High blood pressure",
-                "High cholesterol",
-                "Angina (chest pain)",
-                "Heart rhythm disorders",
-                "Atrial fibrillation"
+            "Bác sĩ tim mạch" to arrayOf(
+                "Không chắc chắn",
+                "Cao huyết áp",
+                "Cholesterol cao",
+                "Đau thắt ngực",
+                "Rối loạn nhịp tim",
+                "Rung nhĩ"
             ),
-            "Dentist" to arrayOf(
-                "Not sure",
-                "Tooth Decay/Cavities",
-                "Gum Disease",
-                "Cracked or Broken Teeth",
-                "Root Infection",
-                "Tooth Loss"
+            "Nha sĩ" to arrayOf(
+                "Không chắc chắn",
+                "Sâu răng",
+                "Bệnh nướu răng",
+                "Răng nứt hoặc gãy",
+                "Nhiễm trùng chân răng",
+                "Mất răng"
             ),
-            "ENT specialist" to arrayOf(
-                "Not sure",
-                "Hearing problems",
-                "Allergies",
-                "Nasal congestion",
-                "Tonsil infections",
-                "Enlarged tonsils"
+            "Bác sĩ tai mũi họng" to arrayOf(
+                "Không chắc chắn",
+                "Vấn đề về thính giác",
+                "Dị ứng",
+                "Nghẹt mũi",
+                "Viêm amidan",
+                "Amidan phì đại"
             ),
-            "Gastroenterologists" to arrayOf(
-                "Not sure",
-                "Diarrhea",
-                "Food Poisoning",
-                "Gas",
-                "Gastroparesis",
-                "Irritable Bowel Syndrome",
-                "Liver Disease",
-                "Pancreatitis",
-                "Stomach ache"
+            "Bác sĩ tiêu hóa" to arrayOf(
+                "Không chắc chắn",
+                "Tiêu chảy",
+                "Ngộ độc thực phẩm",
+                "Đầy hơi",
+                "Liệt dạ dày",
+                "Hội chứng ruột kích thích",
+                "Bệnh gan",
+                "Viêm tụy",
+                "Đau dạ dày"
             ),
-            "Psychiatrists" to arrayOf(
-                "Not sure",
-                "Alcohol use disorder",
-                "Alzheimer’s disease",
-                "Anxiety disorders",
-                "Bipolar disorder",
-                "Depression",
-                "Eating disorders",
-                "Mood disorders",
-                "Panic disorder",
-                "Sleep disorders"
+            "Bác sĩ tâm thần" to arrayOf(
+                "Không chắc chắn",
+                "Rối loạn sử dụng rượu",
+                "Bệnh Alzheimer",
+                "Rối loạn lo âu",
+                "Rối loạn lưỡng cực",
+                "Trầm cảm",
+                "Rối loạn ăn uống",
+                "Rối loạn tâm trạng",
+                "Rối loạn hoảng sợ",
+                "Rối loạn giấc ngủ"
             ),
-            "Radiologist" to arrayOf(
-                "Not sure",
-                "Brain tumor",
-                "Breast cancer",
-                "Kidney stones",
-                "Liver tumors",
-                "Lung cancer",
-                "Neck pain",
-                "Pancreatic cancer",
-                "Pituitary tumors",
-                "Testicular cancer",
-                "Thyroid cancer"
+            "Bác sĩ X-quang" to arrayOf(
+                "Không chắc chắn",
+                "U não",
+                "Ung thư vú",
+                "Sỏi thận",
+                "U gan",
+                "Ung thư phổi",
+                "Đau cổ",
+                "Ung thư tụy",
+                "U tuyến yên",
+                "Ung thư tinh hoàn",
+                "Ung thư tuyến giáp"
             ),
-            "Pulmonologist" to arrayOf(
-                "Not sure",
-                "Asthma",
-                "Chest pain or tightness",
+            "Bác sĩ phổi" to arrayOf(
+                "Không chắc chắn",
+                "Hen suyễn",
+                "Đau hoặc tức ngực",
                 "COVID-19",
-                "Interstitial lung disease",
-                "Pulmonary hypertension",
-                "Tuberculosis"
+                "Bệnh phổi kẽ",
+                "Tăng áp động mạch phổi",
+                "Bệnh lao"
             ),
-            "Neurologist" to arrayOf(
-                "Not sure",
-                "Acute Spinal Cord Injury",
-                "Alzheimer's Disease",
-                "Amyotrophic Lateral Sclerosis",
-                "Brain Tumors",
-                "Cerebral Aneurys"
+            "Bác sĩ thần kinh" to arrayOf(
+                "Không chắc chắn",
+                "Chấn thương tủy sống cấp tính",
+                "Bệnh Alzheimer",
+                "Xơ cứng teo cơ một bên",
+                "U não",
+                "Phình động mạch não"
             ),
-            "Otolaryngologists" to arrayOf(
-                "Not sure",
-                "Hearing loss",
-                "Ear infections",
-                "Balance disorders",
-                "Diseases of the larynx",
-                "Nerve pain",
-                "Facial and cranial nerve disorders"
+            "Bác sĩ tai mũi họng" to arrayOf(
+                "Không chắc chắn",
+                "Mất thính lực",
+                "Nhiễm trùng tai",
+                "Rối loạn thăng bằng",
+                "Bệnh thanh quản",
+                "Đau dây thần kinh",
+                "Rối loạn dây thần kinh sọ mặt"
             ),
-            "Obstetrician/Gynaecologist" to arrayOf(
-                "Not sure",
-                "Bleeding during pregnancy",
-                "Female infertility",
-                "Heart disease in pregnancy",
-                "Menopause",
-                "Menstrual cramps",
-                "Miscarriage",
-                "Ovarian cysts",
-                "Vaginal bleeding"
+            "Bác sĩ sản phụ khoa" to arrayOf(
+                "Không chắc chắn",
+                "Chảy máu khi mang thai",
+                "Vô sinh nữ",
+                "Bệnh tim khi mang thai",
+                "Mãn kinh",
+                "Đau bụng kinh",
+                "Sảy thai",
+                "U nang buồng trứng",
+                "Chảy máu âm đạo"
             ),
-            "Orthopaedic surgeon" to arrayOf(
-                "Not sure",
-                "Bone fractures",
-                "Muscle strains",
-                "Joint or back pain",
-                "Injuries to tendons or ligaments",
-                "Limb abnormalities",
-                "Bone cancer"
+            "Bác sĩ chỉnh hình" to arrayOf(
+                "Không chắc chắn",
+                "Gãy xương",
+                "Căng cơ",
+                "Đau khớp hoặc lưng",
+                "Chấn thương gân hoặc dây chằng",
+                "Dị tật chi",
+                "Ung thư xương"
             ),
-            "Urologists" to arrayOf(
-                "Not sure",
-                "Kidney Stones",
-                "Bladder Infection",
-                "Urinary Retention",
-                "Hematuria",
-                "Erectile Dysfunction",
-                "Prostate Enlargement",
-                "Interstitial Cystitis"
+            "Bác sĩ tiết niệu" to arrayOf(
+                "Không chắc chắn",
+                "Sỏi thận",
+                "Nhiễm trùng bàng quang",
+                "Bí tiểu",
+                "Tiểu ra máu",
+                "Rối loạn cương dương",
+                "Phì đại tuyến tiền liệt",
+                "Viêm bàng quang kẽ"
             ),
-            "Rheumatologists" to arrayOf(
-                "Not sure",
-                "Vasculitis",
-                "Rheumatoid arthritis",
+            "Bác sĩ thấp khớp" to arrayOf(
+                "Không chắc chắn",
+                "Viêm mạch máu",
+                "Viêm khớp dạng thấp",
                 "Lupus",
-                "Scleroderma"
+                "Xơ cứng bì"
             )
         )
 

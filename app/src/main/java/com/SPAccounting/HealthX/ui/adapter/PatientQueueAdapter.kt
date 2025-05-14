@@ -45,11 +45,16 @@ class PatientQueueAdapter(
     override fun onBindViewHolder(holder: DoctorAppointmentViewHolder, position: Int) {
 
         val currentItem = appointmentList[position]
+        val context = holder.itemView.context
 
         if (currentItem.PatientPhone == "" || currentItem.PatientPhone!!.isEmpty()) {
             holder.name.text = currentItem.PatientName
         } else {
-            holder.name.text = currentItem.PatientName + " (" + currentItem.PatientPhone + ")"
+            holder.name.text = context.getString(
+                R.string.patient_name_with_phone,
+                currentItem.PatientName,
+                currentItem.PatientPhone
+            )
         }
 
         val userAndDoctorAreSamePerson = currentItem.DoctorUID == userID
@@ -74,9 +79,12 @@ class PatientQueueAdapter(
             }
         }
 
-
-
-        holder.disease.text = currentItem.Disease + " - " + currentItem.PatientCondition
+        holder.disease.text = context.getString(
+            R.string.disease_and_condition,
+            currentItem.Disease,
+            currentItem.PatientCondition
+        )
+        
         holder.button.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 // For Android 13 and above
@@ -88,7 +96,11 @@ class PatientQueueAdapter(
                         }
 
                         override fun onPermissionDenied(response: PermissionDeniedResponse) {
-                            Toast.makeText(holder.button.context, "Permission required to view prescription", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                holder.button.context, 
+                                context.getString(R.string.permission_required), 
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
 
                         override fun onPermissionRationaleShouldBeShown(

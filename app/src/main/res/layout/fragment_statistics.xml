@@ -18,7 +18,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Statistics" />
+        android:text="@string/statistics" />
 
     <TextView
         android:id="@+id/statisticsTextViewDescription"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/dm_sans_medium"
-        android:text="Your past health records"
+        android:text="@string/your_past_health_records"
         android:textColor="@color/green_shade_light_2"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/statisticsTextView"

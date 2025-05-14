@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="Medical Test Data"
+        android:text="@string/medical_test_data"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Enter your medical test data to get tracked"
+        android:text="@string/enter_your_medical_test_data_to_get_tracked"
         android:textColor="@color/green_shade_light_2"
         app:layout_constraintStart_toStartOf="@+id/nameDisplay"
         app:layout_constraintTop_toBottomOf="@+id/nameDisplay" />
@@ -60,8 +60,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginHorizontal="20dp"
-                    app:header="Test Name"
-                    app:hint="eg. Blood Pressure"
+                    app:header="@string/test_name"
+                    app:hint="@string/test_name_hint"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -71,8 +71,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    app:header="Test Result"
-                    app:hint="eg. 110"
+                    app:header="@string/test_result"
+                    app:hint="@string/test_result_hint"
                     app:inputType="2"
                     app:layout_constraintEnd_toEndOf="@+id/test_Name_edit_text"
                     app:layout_constraintStart_toStartOf="@+id/test_Name_edit_text"
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="20dp"
-            app:header="Save Data"
+            app:header="@string/save_data"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

@@ -1,225 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Medify</string>
+    <string name="app_name">HealthX</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Xin chào</string>
 
-    <string name="reminder_text">%1$s: %2$s pill(s)</string>
-    <string name="pill_time_reminders_format">%1$s at %2$s</string>
-    <string name="it_is_time_to_take">It is time to take %1$s pill(s)!</string>
-    <string name="dropdown_label">Disease Name:</string>
-    <string name="disease_name">Disease Name</string>
-    <string name="specialization">Specialization</string>
-    <string name="mailTo">mailto:geekymusketeers2024@gmail.com?Subject=Medify%20Android%20application%20feedback%20main&amp;Body=Your%20feedback%20is%20important%20to%20us%21</string>
-    <string name="situation">Situation</string>
-    <string name="cardiologist">Cardiologist</string>
-    <string name="dentist">Dentist</string>
-    <string name="ent_specialist">ENT specialist</string>
-    <string name="obstetrician_gynaecologist">Obstetrician/Gynaecologist</string>
-    <string name="orthopaedic_surgeon">Orthopaedic surgeon</string>
-    <string name="psychiatrists">Psychiatrists</string>
-    <string name="radiologist">Radiologist</string>
-    <string name="pulmonologist">Pulmonologist</string>
-    <string name="neurologist">Neurologist</string>
-    <string name="allergists">Allergists</string>
-    <string name="gastroenterologists">Gastroenterologists</string>
-    <string name="doctors">Doctors</string>
-    <string name="category">Category</string>
+    <string name="reminder_text">%1$s: %2$s viên</string>
+    <string name="pill_time_reminders_format">%1$s lúc %2$s</string>
+    <string name="it_is_time_to_take">Đã đến giờ uống %1$s viên!</string>
+    <string name="dropdown_label">Tên bệnh:</string>
+    <string name="disease_name">Tên bệnh</string>
+    <string name="specialization">Chuyên khoa</string>
+    <string name="mailTo">mailto:22028135@vnu.edu.vn?Subject=HealthX%20Android%20application%20feedback%20main&amp;Body=Phản%20hồi%20của%20bạn%20rất%20quan%20trọng%20đối%20với%20chúng%20tôi!</string>
+    <string name="situation">Tình trạng</string>
+    <string name="cardiologist">Bác sĩ tim mạch</string>
+    <string name="dentist">Nha sĩ</string>
+    <string name="ent_specialist">Bác sĩ tai mũi họng</string>
+    <string name="obstetrician_gynaecologist">Bác sĩ sản phụ khoa</string>
+    <string name="orthopaedic_surgeon">Bác sĩ chỉnh hình</string>
+    <string name="psychiatrists">Bác sĩ tâm thần</string>
+    <string name="radiologist">Bác sĩ X-quang</string>
+    <string name="pulmonologist">Bác sĩ phổi</string>
+    <string name="neurologist">Bác sĩ thần kinh</string>
+    <string name="allergists">Bác sĩ dị ứng</string>
+    <string name="gastroenterologists">Bác sĩ tiêu hóa</string>
+    <string name="doctors">Bác sĩ</string>
+    <string name="category">Danh mục</string>
 
     <string-array name="all_specialists">
-        <item>All</item>
-        <item>Cardiologist</item>
-        <item>Dentist</item>
-        <item>ENT specialist</item>
-        <item>Obstetrician/Gynaecologist</item>
-        <item>Orthopaedic surgeon</item>
-        <item>Psychiatrists</item>
-        <item>Radiologist</item>
-        <item>Pulmonologist</item>
-        <item>Neurologist</item>
-        <item>Allergists</item>
-        <item>Orthopaedic Surgeon</item>
-        <item>Gastroenterologists</item>
+        <item>Tất cả</item>
+        <item>Bác sĩ tim mạch</item>
+        <item>Nha sĩ</item>
+        <item>Bác sĩ tai mũi họng</item>
+        <item>Bác sĩ sản phụ khoa</item>
+        <item>Bác sĩ chỉnh hình</item>
+        <item>Bác sĩ tâm thần</item>
+        <item>Bác sĩ X-quang</item>
+        <item>Bác sĩ phổi</item>
+        <item>Bác sĩ thần kinh</item>
+        <item>Bác sĩ dị ứng</item>
+        <item>Bác sĩ chỉnh hình</item>
+        <item>Bác sĩ tiêu hóa</item>
     </string-array>
 
     <string-array name="dropdown_items">
-        <item>Fever</item>
-        <item>Cold</item>
-        <item>Diarrhea</item>
-        <item>Allergies</item>
-        <item>Stomach Aches</item>
+        <item>Sốt</item>
+        <item>Cảm lạnh</item>
+        <item>Tiêu chảy</item>
+        <item>Dị ứng</item>
+        <item>Đau dạ dày</item>
     </string-array>
-    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="title_activity_summary">Tóm tắt hoạt động</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="press_once_again_to_exit">Press once again to exit</string>
+    <string name="first_fragment_label">Fragment đầu tiên</string>
+    <string name="second_fragment_label">Fragment thứ hai</string>
+    <string name="next">Tiếp theo</string>
+    <string name="previous">Quay lại</string>
+    <string name="press_once_again_to_exit">Nhấn lần nữa để thoát</string>
 
 
     <!-- Strings used for the Disease Names -->
-    <string name="disease_not_sure">Not sure</string>
+    <string name="disease_not_sure">Không chắc chắn</string>
 
     <!-- Cardiovascular diseases -->
-    <string name="disease_high_blood_pressure">High blood pressure</string>
-    <string name="disease_high_cholesterol">High cholesterol</string>
-    <string name="disease_angina">Angina (chest pain)</string>
-    <string name="disease_heart_rhythm_disorders">Heart rhythm disorders</string>
-    <string name="disease_atrial_fibrillation">Atrial fibrillation</string>
+    <string name="disease_high_blood_pressure">Cao huyết áp</string>
+    <string name="disease_high_cholesterol">Cholesterol cao</string>
+    <string name="disease_angina">Đau thắt ngực</string>
+    <string name="disease_heart_rhythm_disorders">Rối loạn nhịp tim</string>
+    <string name="disease_atrial_fibrillation">Rung nhĩ</string>
 
     <!-- Dental diseases -->
-    <string name="disease_tooth_decay">Tooth Decay/Cavities</string>
-    <string name="disease_gum_disease">Gum Disease</string>
-    <string name="disease_cracked_teeth">Cracked or Broken Teeth</string>
-    <string name="disease_root_infection">Root Infection</string>
-    <string name="disease_tooth_loss">Tooth Loss</string>
+    <string name="disease_tooth_decay">Sâu răng</string>
+    <string name="disease_gum_disease">Bệnh nướu răng</string>
+    <string name="disease_cracked_teeth">Răng nứt hoặc gãy</string>
+    <string name="disease_root_infection">Nhiễm trùng chân răng</string>
+    <string name="disease_tooth_loss">Mất răng</string>
 
     <!-- Ear, nose, and throat diseases -->
-    <string name="disease_hearing_problems">Hearing problems</string>
-    <string name="disease_allergies">Allergies</string>
-    <string name="disease_nasal_congestion">Nasal congestion</string>
-    <string name="disease_tonsil_infections">Tonsil infections</string>
-    <string name="disease_enlarged_tonsils">Enlarged tonsils</string>
+    <string name="disease_hearing_problems">Vấn đề về thính giác</string>
+    <string name="disease_allergies">Dị ứng</string>
+    <string name="disease_nasal_congestion">Nghẹt mũi</string>
+    <string name="disease_tonsil_infections">Viêm amidan</string>
+    <string name="disease_enlarged_tonsils">Amidan phì đại</string>
 
     <!-- Women's health-related diseases -->
-    <string name="disease_pregnancy_bleeding">Bleeding during pregnancy</string>
-    <string name="disease_female_infertility">Female infertility</string>
+    <string name="disease_pregnancy_bleeding">Chảy máu khi mang thai</string>
+    <string name="disease_female_infertility">Vô sinh nữ</string>
 
-    <string name="disease_bipolar_disorder">Bipolar disorder</string>
-    <string name="disease_depression">Depression</string>
-    <string name="disease_eating_disorder">Eating disorder</string>
-    <string name="disease_mood_disorders">Mood disorders</string>
-    <string name="disease_panic_disorder">Panic disorder</string>
-    <string name="disease_sleep_disorders">Sleep disorders</string>
+    <string name="disease_bipolar_disorder">Rối loạn lưỡng cực</string>
+    <string name="disease_depression">Trầm cảm</string>
+    <string name="disease_eating_disorder">Rối loạn ăn uống</string>
+    <string name="disease_mood_disorders">Rối loạn tâm trạng</string>
+    <string name="disease_panic_disorder">Rối loạn hoảng sợ</string>
+    <string name="disease_sleep_disorders">Rối loạn giấc ngủ</string>
 
-    <string name="disease_heart_disease_pregnancy">Heart disease in pregnancy</string>
-    <string name="disease_menopause">Menopause</string>
-    <string name="disease_menstrual_cramps">Menstrual cramps</string>
-    <string name="disease_miscarriage">Miscarriage</string>
-    <string name="disease_ovarian_cysts">Ovarian cysts</string>
-    <string name="disease_vaginal_bleeding">Vaginal bleeding</string>
+    <string name="disease_heart_disease_pregnancy">Bệnh tim khi mang thai</string>
+    <string name="disease_menopause">Mãn kinh</string>
+    <string name="disease_menstrual_cramps">Đau bụng kinh</string>
+    <string name="disease_miscarriage">Sảy thai</string>
+    <string name="disease_ovarian_cysts">U nang buồng trứng</string>
+    <string name="disease_vaginal_bleeding">Chảy máu âm đạo</string>
 
-    <string name="disease_bone_fractures">Bone fractures</string>
-    <string name="disease_muscle_strains">Muscle strains</string>
-    <string name="disease_joint_back_pain">Joint or back pain</string>
-    <string name="disease_injuries_tendons_ligaments">Injuries to tendons or ligaments</string>
-    <string name="disease_limb_abnormalities">Limb abnormalities</string>
-    <string name="disease_bone_cancer">Bone cancer</string>
+    <string name="disease_bone_fractures">Gãy xương</string>
+    <string name="disease_muscle_strains">Căng cơ</string>
+    <string name="disease_joint_back_pain">Đau khớp hoặc lưng</string>
+    <string name="disease_injuries_tendons_ligaments">Chấn thương gân hoặc dây chằng</string>
+    <string name="disease_limb_abnormalities">Dị tật chi</string>
+    <string name="disease_bone_cancer">Ung thư xương</string>
 
-    <string name="disease_alcohol_use_disorder">Alcohol use disorder</string>
-    <string name="disease_alzheimers">Alzheimer\'s disease</string>
-    <string name="disease_anxiety_disorders">Anxiety disorders</string>
+    <string name="disease_alcohol_use_disorder">Rối loạn sử dụng rượu</string>
+    <string name="disease_alzheimers">Bệnh Alzheimer</string>
+    <string name="disease_anxiety_disorders">Rối loạn lo âu</string>
 
 
-    <string name="disease_brain_tumor">Brain tumor</string>
-    <string name="disease_breast_cancer">Breast cancer</string>
-    <string name="disease_kidney_stones">Kidney stones</string>
-    <string name="disease_liver_tumors">Liver tumors</string>
+    <string name="disease_brain_tumor">U não</string>
+    <string name="disease_breast_cancer">Ung thư vú</string>
+    <string name="disease_kidney_stones">Sỏi thận</string>
+    <string name="disease_liver_tumors">U gan</string>
 
 
     <!-- Strings used for the Pain Levels or Conditions -->
-    <string name="condition_severe_pain">Severe Pain</string>
-    <string name="condition_mild_pain">Mild Pain</string>
-    <string name="condition_no_pain">No Pain</string>
-    <string name="book_an_appointment">Book an appointment</string>
-    <string name="please_upload_your_prescription_in_settings_tab">Please upload your prescription in settings tab</string>
-    <string name="want_to_book_an_appointment">Want to book an appointment\?</string>
-    <string name="book">Book</string>
-    <string name="doctor_s_name_email_or_phone">Doctor\'s name, email or phone</string>
-    <string name="appointment_summary">Appointment Summary</string>
-    <string name="successfully_booked_an_appointment">Successfully booked an appointment</string>
-    <string name="back_to_home">Back to Home</string>
-    <string name="please_fill_the_form_below">Please fill the form below</string>
-    <string name="select_time">Select Time</string>
-    <string name="select_date">Select Date</string>
-    <string name="confirm_your_appointment">Confirm your appointment</string>
-    <string name="note_you_must_enter_the_correct_information_entering_wrong_information_might_lead_to_cancellation_of_your_future_appointments">Note: You must enter the correct information. Entering wrong information might lead to cancellation of your future appointments.</string>
-    <string name="mon_fri_09_00_21_00">Mon - Fri 09:00 : 21:00</string>
-    <string name="working_hours">Working hours</string>
-    <string name="your_appointment">Your Appointment</string>
-    <string name="patient_queue">Patient Queue</string>
-    <string name="settings">Settings</string>
-    <string name="configure_changes">Configure changes</string>
-    <string name="blood_pressure">Blood Pressure</string>
-    <string name="add_data">Add data</string>
-    <string name="biological_reference_80_120">Biological Reference: 80–120</string>
-    <string name="min_loading_max_loading">Min: Loading, Max: Loading</string>
-    <string name="sugar_fasting">Sugar Fasting</string>
-    <string name="biological_reference_70_100">Biological Reference: 70–100</string>
-    <string name="sugar_pp">Sugar PP</string>
+    <string name="condition_severe_pain">Đau nặng</string>
+    <string name="condition_mild_pain">Đau nhẹ</string>
+    <string name="condition_no_pain">Không đau</string>
+    <string name="book_an_appointment">Đặt lịch hẹn</string>
+    <string name="please_upload_your_prescription_in_settings_tab">Vui lòng tải lên đơn thuốc của bạn trong tab cài đặt</string>
+    <string name="want_to_book_an_appointment">Bạn muốn đặt lịch hẹn?</string>
+    <string name="book">Đặt lịch</string>
+    <string name="doctor_s_name_email_or_phone">Tên, email hoặc số điện thoại của bác sĩ</string>
+    <string name="appointment_summary">Tóm tắt lịch hẹn</string>
+    <string name="successfully_booked_an_appointment">Đặt lịch hẹn thành công</string>
+    <string name="back_to_home">Về trang chủ</string>
+    <string name="please_fill_the_form_below">Vui lòng điền vào mẫu dưới đây</string>
+    <string name="select_time">Chọn giờ</string>
+    <string name="select_date">Chọn ngày</string>
+    <string name="confirm_your_appointment">Xác nhận lịch hẹn của bạn</string>
+    <string name="note_you_must_enter_the_correct_information_entering_wrong_information_might_lead_to_cancellation_of_your_future_appointments">Lưu ý: Bạn phải nhập thông tin chính xác. Nhập sai thông tin có thể dẫn đến việc hủy các lịch hẹn trong tương lai của bạn.</string>
+    <string name="mon_fri_09_00_21_00">Thứ 2 - Thứ 6 09:00 - 21:00</string>
+    <string name="working_hours">Giờ làm việc</string>
+    <string name="your_appointment">Lịch hẹn của bạn</string>
+    <string name="patient_queue">Hàng đợi bệnh nhân</string>
+    <string name="settings">Cài đặt</string>
+    <string name="configure_changes">Cấu hình thay đổi</string>
+    <string name="blood_pressure">Huyết áp</string>
+    <string name="add_data">Thêm dữ liệu</string>
+    <string name="biological_reference_80_120">Tham chiếu sinh học: 80-120</string>
+    <string name="min_loading_max_loading">Tối thiểu: Đang tải, Tối đa: Đang tải</string>
+    <string name="sugar_fasting">Đường huyết lúc đói</string>
+    <string name="biological_reference_70_100">Tham chiếu sinh học: 70-100</string>
+    <string name="sugar_pp">Đường huyết sau ăn</string>
     <string name="cholesterol">Cholesterol</string>
-    <string name="rate_user">Rate user</string>
-    <string name="submit_rating">Submit Rating</string>
-    <string name="dispute_a_rating">Dispute a Rating</string>
-    <string name="report_any_unfair_or_inaccurate_ratings_you_have_received_we_will_review_your_report_and_take_appropriate_action">Report any unfair or inaccurate ratings you have received. We will review your report and take appropriate action.</string>
-    <string name="enter_your_title_here">Enter your title here \*</string>
-    <string name="reason_for_dispute">Reason for Dispute \*</string>
-    <string name="submit_dispute">Submit Dispute</string>
-    <string name="enter_your_comment_here_optional">Enter your comment here (optional)</string>
-    <string name="create_or_edit_your_upi">Create or edit your UPI</string>
-    <string name="upi_manager">UPI Manager</string>
-    <string name="add_prescription">Add Prescription</string>
-    <string name="select_prescription">Select Prescription</string>
-    <string name="upload_file">Upload file</string>
-    <string name="file_title">File title</string>
-    <string name="edit_profile">Edit profile</string>
-    <string name="profile">Profile</string>
-    <string name="optional">Optional</string>
-    <string name="search">Search</string>
-    <string name="register">Register</string>
-    <string name="create_a_new_account">Create a new account</string>
+    <string name="rate_user">Đánh giá người dùng</string>
+    <string name="submit_rating">Gửi đánh giá</string>
+    <string name="dispute_a_rating">Khiếu nại đánh giá</string>
+    <string name="report_any_unfair_or_inaccurate_ratings_you_have_received_we_will_review_your_report_and_take_appropriate_action">Báo cáo bất kỳ đánh giá không công bằng hoặc không chính xác mà bạn đã nhận được. Chúng tôi sẽ xem xét báo cáo của bạn và thực hiện hành động thích hợp.</string>
+    <string name="enter_your_title_here">Nhập tiêu đề của bạn ở đây *</string>
+    <string name="reason_for_dispute">Lý do khiếu nại *</string>
+    <string name="submit_dispute">Gửi khiếu nại</string>
+    <string name="enter_your_comment_here_optional">Nhập bình luận của bạn ở đây (tùy chọn)</string>
+    <string name="create_or_edit_your_upi">Tạo hoặc chỉnh sửa UPI của bạn</string>
+    <string name="upi_manager">Quản lý UPI</string>
+    <string name="add_prescription">Thêm đơn thuốc</string>
+    <string name="select_prescription">Chọn đơn thuốc</string>
+    <string name="upload_file">Tải lên tệp</string>
+    <string name="file_title">Tiêu đề tệp</string>
+    <string name="edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="optional">Tùy chọn</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="register">Đăng ký</string>
+    <string name="create_a_new_account">Tạo tài khoản mới</string>
     <string name="password_hint">***************</string>
-    <string name="phone_number_hint">+91 9876543210</string>
+    <string name="phone_number_hint">+84 987654321</string>
     <string name="email_hint">johndoe123@gmail.com</string>
     <string name="email">Email</string>
-    <string name="name_hint">John Doe</string>
-    <string name="name">Name</string>
-    <string name="phone_number">Phone Number</string>
-    <string name="password">Password</string>
-    <string name="next_step">Next Step</string>
-    <string name="already_have_an_account">Already have an account?</string>
-    <string name="login_text">Login</string>
-    <string name="profile_details">Profile Details</string>
-    <string name="address_hint">42/C Devanagari, Bangalore - XXXXXX</string>
-    <string name="is_doctor_hint">No, I\'m not a Doctor</string>
-    <string name="are_you_a_doctor">Are you a Doctor?</string>
-    <string name="address">Address</string>
-    <string name="specialization_hint">Eg. Cardiologist</string>
-    <string name="create_account">Create Account</string>
-    <string name="your_database_was_created">Your Database was Created</string>
-    <string name="account_creation_failed">Account Creation Failed</string>
-    <string name="database_creation_failed">Database Creation Failed</string>
-    <string name="account_created_successfully">Account Created Successfully</string>
-    <string name="please_select_your_profession">Please select your profession</string>
-    <string name="please_select_your_specialization">Please select your Specialization</string>
-    <string name="please_select_your_gender">Please select your gender</string>
-    <string name="login">Login</string>
-    <string name="enter_your_details_to_get_started">Enter your details to get started</string>
-    <string name="sign_in">Sign In</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="don_t_have_an_account">Don\'t have an account?</string>
-    <string name="logged_in">Logged in</string>
-    <string name="send_reset_mail">Send Reset Mail</string>
-    <string name="enter_your_registered_email_address">Enter your registered email address</string>
-    <string name="upload_prescription">Upload Prescription</string>
-    <string name="upi_qr">UPI QR</string>
-    <string name="about_us">About Us</string>
-    <string name="feedback">Feedback</string>
-    <string name="need_help">Need help?</string>
-    <string name="logout">Logout</string>
-    <string name="update_profile">Update Profile</string>
-    <string name="invalid_name">Invalid Name</string>
-    <string name="invalid_age">Invalid Age</string>
-    <string name="invalid_phone_number">Invalid Phone Number</string>
-    <string name="invalid_address">Invalid Address</string>
-    <string name="customize_your_profile">Customize your profile</string>
-    <string name="profile_updated_successfully">Profile updated Successfully!</string>
-    <string name="failed_to_update_profile">Failed to update Profile!</string>
-    <string name="no_address_found">No address found</string>
-    <string name="welcome_to_medify">Welcome to Medify</string>
-    <string name="description">Medify is an Android application that not only solves the issue of the patients as users, but also solves the problems of the doctors as well.\nThe app offers users to book an appointment with the doctor that are registered in the app already.\nThe waiting queue is sorted according to the priority and not ‘First Come First Serve’ which allows all the patients to get equal priority.\nUsers can monitor their health data which is shown in a chart of last 5 data from their report.</string>
-    <string name="needHelpDescription">Medify is an Android application that not only solves the issue of the patients as users, but also solves the problems of the doctors as well.\nBook an appointment with ease by answering some questions regarding your health issue.\nDo not need the carry the previous prescription to doctor just upload it here and when you book appointment the doctor can easily see your previous prescription.</string>
+    <string name="name">Tên</string>
+    <string name="name_hint">Nguyễn Văn A</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="password">Mật khẩu</string>
+    <string name="next_step">Bước tiếp theo</string>
+    <string name="already_have_an_account">Đã có tài khoản?</string>
+    <string name="login_text">Đăng nhập</string>
+    <string name="profile_details">Chi tiết hồ sơ</string>
+    <string name="address_hint">42/C Đê La Thành, Hà Nội - XXXXXX</string>
+    <string name="is_doctor_hint">Không, tôi không phải là Bác sĩ</string>
+    <string name="are_you_a_doctor">Bạn có phải là Bác sĩ không?</string>
+    <string name="address">Địa chỉ</string>
+    <string name="specialization_hint">Ví dụ: Bác sĩ tim mạch</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="your_database_was_created">Cơ sở dữ liệu của bạn đã được tạo</string>
+    <string name="account_creation_failed">Tạo tài khoản thất bại</string>
+    <string name="database_creation_failed">Tạo cơ sở dữ liệu thất bại</string>
+    <string name="account_created_successfully">Tạo tài khoản thành công</string>
+    <string name="please_select_your_profession">Vui lòng chọn nghề nghiệp của bạn</string>
+    <string name="please_select_your_specialization">Vui lòng chọn chuyên khoa của bạn</string>
+    <string name="please_select_your_gender">Vui lòng chọn giới tính của bạn</string>
+    <string name="login">Đăng nhập</string>
+    <string name="enter_your_details_to_get_started">Nhập thông tin của bạn để bắt đầu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="don_t_have_an_account">Chưa có tài khoản?</string>
+    <string name="logged_in">Đã đăng nhập</string>
+    <string name="send_reset_mail">Gửi email đặt lại</string>
+    <string name="enter_your_registered_email_address">Nhập địa chỉ email đã đăng ký của bạn</string>
+    <string name="upload_prescription">Tải lên đơn thuốc</string>
+    <string name="upi_qr">Mã QR UPI</string>
+    <string name="about_us">Về chúng tôi</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="need_help">Cần giúp đỡ?</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="update_profile">Cập nhật hồ sơ</string>
+    <string name="invalid_name">Tên không hợp lệ</string>
+    <string name="invalid_age">Tuổi không hợp lệ</string>
+    <string name="invalid_phone_number">Số điện thoại không hợp lệ</string>
+    <string name="invalid_address">Địa chỉ không hợp lệ</string>
+    <string name="customize_your_profile">Tùy chỉnh hồ sơ của bạn</string>
+    <string name="profile_updated_successfully">Cập nhật hồ sơ thành công</string>
+    <string name="failed_to_update_profile">Cập nhật hồ sơ thất bại</string>
+    <string name="no_address_found">Không tìm thấy địa chỉ</string>
+    <string name="welcome_to_HealthX">Chào mừng đến với HealthX</string>
+    <string name="description">HealthX là một ứng dụng Android không chỉ giải quyết vấn đề của bệnh nhân mà còn giải quyết các vấn đề của bác sĩ.\n\nỨng dụng cho phép người dùng đặt lịch hẹn với bác sĩ đã đăng ký trong ứng dụng.\n\nHàng đợi chờ được sắp xếp theo mức độ ưu tiên chứ không phải theo nguyên tắc \"Ai đến trước phục vụ trước\", giúp tất cả bệnh nhân có cơ hội được ưu tiên như nhau.\n\nNgười dùng có thể theo dõi dữ liệu sức khỏe của mình được hiển thị trong biểu đồ 5 dữ liệu gần nhất từ báo cáo của họ.</string>
+    <string name="needHelpDescription">HealthX là một ứng dụng Android không chỉ giải quyết vấn đề của bệnh nhân mà còn giải quyết các vấn đề của bác sĩ.\n\nĐặt lịch hẹn dễ dàng bằng cách trả lời một số câu hỏi về vấn đề sức khỏe của bạn.\n\nKhông cần mang đơn thuốc cũ đến gặp bác sĩ, chỉ cần tải lên đây và khi bạn đặt lịch hẹn, bác sĩ có thể dễ dàng xem đơn thuốc trước đó của bạn.</string>
+    <string name="age">Tuổi</string>
+    <string name="select_date_of_birth">Chọn ngày sinh</string>
+    <string name="gender">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="other">Khác</string>
+    <string name="yes_i_am_a_doctor">Vâng, tôi là bác sĩ</string>
+    <string name="no_i_am_not_a_doctor">Không, tôi không phải là bác sĩ</string>
 
+    <!-- Profile editing strings -->
+    <string name="update_your_details">Cập nhật thông tin của bạn</string>
+    <string name="account_details">Thông tin tài khoản</string>
+    <string name="profile_name">Tên hồ sơ</string>
+    <string name="profile_name_hint">Nhập tên của bạn</string>
+    <string name="profile_age">Tuổi hồ sơ</string>
+    <string name="profile_select_date_of_birth">Chọn ngày sinh cho hồ sơ</string>
+    <string name="profile_phone_number">Số điện thoại hồ sơ</string>
+    <string name="profile_phone_number_hint">Nhập số điện thoại của bạn</string>
+    <string name="profile_address">Địa chỉ hồ sơ</string>
+    <string name="profile_address_hint">Nhập địa chỉ của bạn</string>
+    <string name="profile_update">Cập nhật hồ sơ cá nhân</string>
+    <string name="profile_update_success">Cập nhật hồ sơ thành công</string>
+    <string name="profile_update_failed">Cập nhật hồ sơ thất bại</string>
+    <string name="profile_invalid_name">Tên hồ sơ không hợp lệ</string>
+    <string name="profile_invalid_age">Tuổi hồ sơ không hợp lệ</string>
+    <string name="profile_invalid_phone">Số điện thoại hồ sơ không hợp lệ</string>
+    <string name="profile_invalid_address">Địa chỉ hồ sơ không hợp lệ</string>
+
+    <!-- Statistics strings -->
+    <string name="statistics">Thống kê</string>
+    <string name="your_past_health_records">Hồ sơ sức khỏe trước đây của bạn</string>
+    <string name="medical_test_data">Dữ liệu xét nghiệm y tế</string>
+    <string name="enter_your_medical_test_data_to_get_tracked">Nhập dữ liệu xét nghiệm y tế của bạn để theo dõi</string>
+    <string name="test_name">Tên xét nghiệm</string>
+    <string name="test_name_hint">ví dụ: Huyết áp</string>
+    <string name="test_result">Kết quả xét nghiệm</string>
+    <string name="test_result_hint">ví dụ: 110</string>
+    <string name="save_data">Lưu dữ liệu</string>
+
+    <!-- Appointment booking date related strings -->
+    <string name="date_picker">Chọn ngày</string>
+    <string name="selected_date_format">Ngày đã chọn: %s</string>
+
+    <!-- Patient Queue strings -->
+    <string name="selected_date">Ngày đã chọn: %s</string>
+    <string name="no_appointment_for_this_date">Không có lịch hẹn cho ngày này</string>
+    <string name="error_selecting_date">Lỗi khi chọn ngày: %s</string>
+    <string name="patient_name">%s</string>
+    <string name="date">%s</string>
+
+    <!-- Patient Queue adapter strings -->
+    <string name="disease_and_condition">%1$s - %2$s</string>
+    <string name="patient_name_with_phone">%1$s (%2$s)</string>
+    <string name="permission_required">Cần quyền truy cập để xem đơn thuốc</string>
+    <string name="time">%s</string>
+
+    <!-- My Appointments strings -->
+    <string name="my_patients">Bệnh nhân của tôi</string>
+    <string name="no_appointment_found">Không tìm thấy lịch hẹn</string>
+    <string name="select_date_first">Vui lòng chọn ngày trước</string>
+
+    <!-- PatientAppointment adapter strings -->
+    <string name="doctor_name">%s</string>
+    <string name="disease">%s</string>
+    <string name="time_format">%s</string>
+    <string name="date_format">%s</string>
+
+    <!-- Profile and Edit Profile screen strings -->
+    <string name="update_your_prescription">Cập nhật đơn thuốc của bạn</string>
+    <string name="confirm_changes">Xác nhận thay đổi</string>
+    <string name="profile_update_success_toast">Cập nhật thành công</string>
+    <string name="profile_update_failed_toast">Cập nhật thất bại</string>
+    <string name="profile_name_display">Tên: %s</string>
+    <string name="profile_age_display">Tuổi: %s</string>
+    <string name="profile_email_display">Email: %s</string>
+    <string name="profile_phone_display">Số điện thoại: %s</string>
+
+    <!-- Appointment Summary strings -->
+    <string name="doctor_name_format">Tên bác sĩ: %s</string>
+    <string name="doctor_speciality_format">Chuyên khoa: %s</string>
+    <string name="doctor_email_format">Email bác sĩ: %s</string>
+    <string name="doctor_phone_format">Số điện thoại bác sĩ: %s</string>
+    <string name="appointment_date_format">Ngày hẹn: %s</string>
+    <string name="appointment_time_format">Giờ hẹn: %s</string>
 
 </resources>

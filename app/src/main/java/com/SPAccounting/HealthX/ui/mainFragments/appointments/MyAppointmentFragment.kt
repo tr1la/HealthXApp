@@ -14,6 +14,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.SPAccounting.HealthX.R
 import com.SPAccounting.HealthX.base.ViewModelFactory
 import com.SPAccounting.HealthX.databinding.FragmentMyAppointmentBinding
 import com.SPAccounting.HealthX.model.Doctor
@@ -74,13 +75,13 @@ class MyAppointmentFragment : Fragment() {
                 requireActivity().supportFragmentManager.let {
                     datePicker.show(
                         it,
-                        Constants.DatePicker
+                        getString(R.string.date_picker)
                     )
                 }
                 datePicker.addOnPositiveButtonClickListener {
                     val dateFormatter = SimpleDateFormat(Constants.dateFormat)
                     val tempDate = dateFormatter.format(Date(it))
-                    binding.selectedDateText.text = "Selected Date: $tempDate"
+                    binding.selectedDateText.text = getString(R.string.selected_date, tempDate)
                     myAppointmentsViewModel.getAppointmentsForTheDate(tempDate)
                 }
             }
@@ -103,7 +104,7 @@ class MyAppointmentFragment : Fragment() {
             userLiveData.observe(viewLifecycleOwner) {
                 val dateNow = DateTimeExtension.getCurrentDateAsString()
                 getAppointmentsForTheDate(dateNow)
-                binding.selectedDateText.text = "Selected Date: $dateNow"
+                binding.selectedDateText.text = getString(R.string.selected_date, dateNow)
                 if (it.isDoctor == Doctor.IS_DOCTOR.toItemString())
                     binding.toPatientList.show()
             }

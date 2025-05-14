@@ -90,7 +90,11 @@ class AppointmentBookingFragment : Fragment() {
                 appointmentViewModel.setAppointmentDisease(it.toString())
             }
 
-            val situationItems = listOf("Severe Pain", "Mild Pain", "No Pain")
+            val situationItems = listOf(
+                getString(R.string.condition_severe_pain),
+                getString(R.string.condition_mild_pain),
+                getString(R.string.condition_no_pain)
+            )
             val situationAdapter = ArrayAdapter(requireContext(), R.layout.list_items, situationItems)
             situationDropdown.setAdapter(situationAdapter)
             situationDropdown.addTextChangedListener {
@@ -138,7 +142,7 @@ class AppointmentBookingFragment : Fragment() {
             setSelection(calendar.timeInMillis)
 
         }.build()
-        datePicker.show(requireActivity().supportFragmentManager, "DatePicker")
+        datePicker.show(requireActivity().supportFragmentManager, getString(R.string.date_picker))
 
 
         datePicker.addOnPositiveButtonClickListener {

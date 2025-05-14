@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.SPAccounting.HealthX.R
 import com.SPAccounting.HealthX.databinding.FragmentBookingSummaryBinding
 
 
@@ -31,12 +32,12 @@ class BookingSummaryFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     private fun initView() {
         binding.apply {
-            summaryDoctorName.text = "Doctor's Name: ${args.summary.doctorName}"
-            summaryDoctorSpeciality.text = "Speciality: ${args.summary.doctorSpeciality}"
-//            summaryDoctorEmail.text = "Doctor's Email: ${args.summary.doctorEmail}"
-//            summaryDoctorPhoneNumber.text = "Doctor's Phone ${args.summary.doctorPhone}"
-            summaryDate.text = "Appointment Date: ${args.summary.appointmentDate}"
-            summaryTime.text = "Appointment Time: ${args.summary.appointmentTime}"
+            summaryDoctorName.text = getString(R.string.doctor_name_format, args.summary.doctorName)
+            summaryDoctorSpeciality.text = getString(R.string.doctor_speciality_format, args.summary.doctorSpeciality)
+//            summaryDoctorEmail.text = getString(R.string.doctor_email_format, args.summary.doctorEmail)
+//            summaryDoctorPhoneNumber.text = getString(R.string.doctor_phone_format, args.summary.doctorPhone)
+            summaryDate.text = getString(R.string.appointment_date_format, args.summary.appointmentDate)
+            summaryTime.text = getString(R.string.appointment_time_format, args.summary.appointmentTime)
             btnHome.setOnClickListener {
                 findNavController().popBackStack()
             }

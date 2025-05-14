@@ -46,8 +46,8 @@ enum class Doctor {
 
     fun toDisplayString(): String {
         return if (this == IS_DOCTOR) {
-            "Yes, I'm a Doctor"
-        } else "No, I'm not a Doctor"
+            "Vâng, tôi là bác sĩ"
+        } else "Không, tôi không phải là bác sĩ"
     }
 
     fun toItemString(): String {
@@ -79,26 +79,26 @@ enum class Specialist {
 
     fun toItemString(): String {
         return when (this) {
-            CARDIOLOGIST -> "Cardiologist"
-            DENTIST -> "Dentist"
-            ENT_SPECIALIST -> "ENT Specialist"
-            OBSTETRICIAN_GYNAECOLOGIST -> "Obstetrician/Gynaecologist"
-            ORTHOPAEDIC_SURGEON -> "Orthopaedic Surgeon"
-            PSYCHIATRIST -> "Psychiatrist"
-            RADIOLOGIST -> "Radiologist"
-            PULMONOLOGIST -> "Pulmonologist"
-            NEUROLOGIST -> "Neurologist"
-            ALLERGISTS -> "Allergists"
-            GASTROENTEROLOGISTS -> "Gastroenterologists"
+            CARDIOLOGIST -> "Bác sĩ tim mạch"
+            DENTIST -> "Nha sĩ"
+            ENT_SPECIALIST -> "Bác sĩ tai mũi họng"
+            OBSTETRICIAN_GYNAECOLOGIST -> "Bác sĩ sản phụ khoa"
+            ORTHOPAEDIC_SURGEON -> "Bác sĩ chỉnh hình"
+            PSYCHIATRIST -> "Bác sĩ tâm thần"
+            RADIOLOGIST -> "Bác sĩ X-quang"
+            PULMONOLOGIST -> "Bác sĩ phổi"
+            NEUROLOGIST -> "Bác sĩ thần kinh"
+            ALLERGISTS -> "Bác sĩ dị ứng"
+            GASTROENTEROLOGISTS -> "Bác sĩ tiêu hóa"
         }
     }
 }
 
 
 enum class Gender(gender: String) {
-    MALE("male"),
-    FEMALE("female"),
-    OTHER("other");
+    MALE("nam"),
+    FEMALE("nu"),
+    OTHER("khac");
 
     companion object {
         fun getGenderToGender(gender: String): Gender {
@@ -111,25 +111,25 @@ enum class Gender(gender: String) {
 
         fun getGenderToString(gender: String): String {
             return when (gender) {
-                MALE.toDisplayString() -> "male"
-                FEMALE.toDisplayString() -> "female"
-                else -> "other"
+                MALE.toDisplayString() -> "nam"
+                FEMALE.toDisplayString() -> "nu"
+                else -> "khac"
             }
         }
     }
 
     fun toDisplayString(): String {
         return when (this) {
-            MALE -> "Male"
-            FEMALE -> "Female"
-            else -> "Other"
+            MALE -> "Nam"
+            FEMALE -> "Nữ"
+            else -> "Khác"
         }
     }
     fun toItemString(): String {
         return when (this) {
-            MALE -> "male"
-            FEMALE -> "female"
-            else -> "other"
+            MALE -> "nam"
+            FEMALE -> "nu"
+            else -> "khac"
         }
     }
 }

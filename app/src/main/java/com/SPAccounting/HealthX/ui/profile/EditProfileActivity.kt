@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.SPAccounting.HealthX.R
 import com.SPAccounting.HealthX.ui.mainFragments.settings.prescription.AddPrescriptionActivity
 import com.SPAccounting.HealthX.databinding.ActivityEditProfileBinding
 import com.google.firebase.database.DatabaseReference
@@ -51,9 +52,9 @@ class EditProfileActivity : AppCompatActivity() {
             binding.editName.text.clear()
             binding.editAge.text.clear()
             binding.editPhoneNumber.text.clear()
-            Toast.makeText(baseContext, "Successfully Updated", Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, getString(R.string.profile_update_success_toast), Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
-            Toast.makeText(baseContext, "Failed to update", Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, getString(R.string.profile_update_failed_toast), Toast.LENGTH_SHORT).show()
         }
     }
 }

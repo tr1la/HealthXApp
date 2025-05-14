@@ -100,16 +100,16 @@ class ProfileFragment : Fragment() {
                 updateEditFieldsHints(it)
             }
             isValidName.observe(viewLifecycleOwner) {
-                Toast.makeText(requireContext(), getString(R.string.invalid_name), Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.profile_invalid_name), Toast.LENGTH_SHORT).show()
             }
             isValidAge.observe(viewLifecycleOwner) {
-                Toast.makeText(requireContext(), getString(R.string.invalid_age), Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.profile_invalid_age), Toast.LENGTH_SHORT).show()
             }
             isValidPhoneNumber.observe(viewLifecycleOwner) {
-                Toast.makeText(requireContext(), getString(R.string.invalid_phone_number), Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.profile_invalid_phone), Toast.LENGTH_SHORT).show()
             }
             isValidAddress.observe(viewLifecycleOwner) {
-                Toast.makeText(requireContext(), getString(R.string.invalid_address), Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.profile_invalid_address), Toast.LENGTH_SHORT).show()
             }
             enableNextButtonLiveData.observe(viewLifecycleOwner) {
                 binding.updateAccountButton.isEnabled = it
@@ -117,10 +117,10 @@ class ProfileFragment : Fragment() {
             }
             isProfileUpdated.observe(viewLifecycleOwner) {
                 if (it) {
-                    Toast.makeText(requireContext(), getString(R.string.profile_updated_successfully), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.profile_update_success), Toast.LENGTH_SHORT).show()
                     findNavController().popBackStack(R.id.settings, false)
                 } else {
-                    Toast.makeText(requireContext(), getString(R.string.failed_to_update_profile), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.profile_update_failed), Toast.LENGTH_SHORT).show()
                 }
             }
         }

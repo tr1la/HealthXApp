@@ -32,12 +32,13 @@ class PatientAppointmentAdapter(
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: PatientAppointmentViewHolder, position: Int) {
         val currentItem = appointmentList[position]
+        val context = holder.itemView.context
 
         holder.apply {
-            name.text = currentItem.DoctorName
-            disease.text = currentItem.Disease
-            time.text = currentItem.Time
-            date.text = currentItem.Date
+            name.text = context.getString(R.string.doctor_name, currentItem.DoctorName)
+            disease.text = context.getString(R.string.disease, currentItem.Disease)
+            time.text = context.getString(R.string.time_format, currentItem.Time)
+            date.text = context.getString(R.string.date_format, currentItem.Date)
             itemView.setOnClickListener {
                 listener(currentItem)
             }

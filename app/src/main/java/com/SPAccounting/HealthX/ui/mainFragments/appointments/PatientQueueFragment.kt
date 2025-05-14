@@ -11,6 +11,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.SPAccounting.HealthX.R
 import com.SPAccounting.HealthX.base.ViewModelFactory
 import com.SPAccounting.HealthX.databinding.FragmentPatientQueueBinding
 import com.SPAccounting.HealthX.databinding.RatingModalBinding
@@ -75,14 +76,14 @@ class PatientQueueFragment : Fragment() {
                 }.build()
                 
                 requireActivity().supportFragmentManager.let {
-                    datePicker.show(it, Constants.DatePicker)
+                    datePicker.show(it, getString(R.string.date_picker))
                 }
                 
                 datePicker.addOnPositiveButtonClickListener { selectedDate ->
                     try {
                         val dateFormatter = SimpleDateFormat(Constants.dateFormat)
                         val formattedDate = dateFormatter.format(Date(selectedDate))
-                        selectedDateText.text = "Selected Date: $formattedDate"
+                        selectedDateText.text = getString(R.string.selected_date, formattedDate)
                         patientQueueViewModel.setPassedData(
                             args.doctorUserID,
                             formattedDate,
@@ -91,7 +92,7 @@ class PatientQueueFragment : Fragment() {
                         patientQueueViewModel.getPatientsListFromFirebase()
                     } catch (e: Exception) {
                         Toast.makeText(requireContext(), 
-                            "Error selecting date: ${e.message}", 
+                            getString(R.string.error_selecting_date, e.message), 
                             Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -140,13 +141,14 @@ class PatientQueueFragment : Fragment() {
             )
             
             // Hiển thị ngày đã chọn ngay khi fragment được tạo
-            binding.selectedDateText.text = "Selected Date: ${args.selectedDate}"
+            binding.selectedDateText.text = getString(R.string.selected_date, args.selectedDate)
             
             doctorUserID.observe(viewLifecycleOwner) {
                 getPatientsListFromFirebase()
             }
             patientsListLiveData.observe(viewLifecycleOwner) {
                 if (it.isEmpty()) {
+                    binding.noAppointmentText.text = getString(R.string.no_appointment_for_this_date)
                     binding.noAppointmentText.visibility = View.VISIBLE
                     binding.appointmentRecyclerview.visibility = View.GONE
                 } else {
