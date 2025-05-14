@@ -29,7 +29,12 @@ class ProfileActivity : AppCompatActivity() {
         binding.ProfileToEdit.setOnClickListener {
             startActivity(Intent(baseContext, EditProfileActivity::class.java))
         }
-
+    }
+    
+    // Refresh data when returning from EditProfileActivity
+    override fun onResume() {
+        super.onResume()
+        getUserData()
     }
 
     @SuppressLint("SetTextI18n")

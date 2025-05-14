@@ -21,7 +21,6 @@ import com.SPAccounting.HealthX.databinding.FragmentSettingsBinding
 import com.SPAccounting.HealthX.model.SettingsItem
 import com.SPAccounting.HealthX.model.SettingsState
 import com.SPAccounting.HealthX.ui.adapter.SettingsAdapter
-import com.SPAccounting.HealthX.ui.mainFragments.settings.upi.UPImanager
 import com.SPAccounting.HealthX.ui.profile.ProfileActivity
 import com.SPAccounting.HealthX.utils.Constants
 import com.SPAccounting.HealthX.utils.DialogUtil.createBottomSheet
@@ -71,11 +70,10 @@ class SettingsFragment : Fragment() {
         settingsItemList.apply {
             add(SettingsItem(0, R.drawable.edit_profile, getString(R.string.edit_profile)))
             add(SettingsItem(1, R.drawable.upload_prescription, getString(R.string.upload_prescription)))
-            add(SettingsItem(2, R.drawable.upi_id, getString(R.string.upi_qr)))
-            add(SettingsItem(3, R.drawable.info, getString(R.string.about_us)))
-            add(SettingsItem(4, R.drawable.feedback, getString(R.string.feedback)))
-            add(SettingsItem(5, R.drawable.need_help, getString(R.string.need_help)))
-            add(SettingsItem(6, R.drawable.logout, getString(R.string.logout)))
+            add(SettingsItem(2, R.drawable.info, getString(R.string.about_us)))
+            add(SettingsItem(3, R.drawable.feedback, getString(R.string.feedback)))
+            add(SettingsItem(4, R.drawable.need_help, getString(R.string.need_help)))
+            add(SettingsItem(5, R.drawable.logout, getString(R.string.logout)))
         }
 
         settingsItemAdapter =
@@ -91,10 +89,6 @@ class SettingsFragment : Fragment() {
 
                     SettingsState.getSettingsState(SettingsState.TO_UPLOAD_PRESCRIPTION) -> {
                         navigateToUploadPrescription()
-                    }
-
-                    SettingsState.getSettingsState(SettingsState.TO_UPI_QR) -> {
-                        startActivity(Intent(requireActivity(), UPImanager::class.java))
                     }
 
                     SettingsState.getSettingsState(SettingsState.TO_ABOUT_US) -> {

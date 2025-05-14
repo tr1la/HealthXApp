@@ -296,7 +296,8 @@
     <string name="profile_name_display">Tên: %s</string>
     <string name="profile_age_display">Tuổi: %s</string>
     <string name="profile_email_display">Email: %s</string>
-    <string name="profile_phone_display">Số điện thoại: %s</string>
+    <string name="profile_phone_display">SĐT: %s</string>
+    <string name="profile_address_display">Địa chỉ: %s</string>
 
     <!-- Appointment Summary strings -->
     <string name="doctor_name_format">Tên bác sĩ: %s</string>
