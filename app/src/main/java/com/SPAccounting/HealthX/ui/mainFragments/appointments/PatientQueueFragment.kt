@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +20,8 @@ import com.SPAccounting.HealthX.ui.adapter.PatientQueueAdapter
 import com.SPAccounting.HealthX.utils.Constants
 import com.SPAccounting.HealthX.utils.DialogUtil.createBottomSheet
 import com.SPAccounting.HealthX.utils.DialogUtil.setBottomSheet
+import com.google.android.material.datepicker.CalendarConstraints
+import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.util.*
@@ -57,28 +60,41 @@ class PatientQueueFragment : Fragment() {
             }
             recyclerView.adapter = patientQueueAdapter
 
-            // Thêm xử lý chọn ngày
-            if (!args.hideSelectedDate) {
-                selectDate.visibility = View.VISIBLE
-                selectDate.setOnClickListener {
-                    val datePicker = MaterialDatePicker.Builder.datePicker().build()
-                    requireActivity().supportFragmentManager.let {
-                        datePicker.show(it, Constants.DatePicker)
-                    }
-                    datePicker.addOnPositiveButtonClickListener { selectedDate ->
+            // Luôn hiển thị date picker cho bác sĩ
+            selectDate.visibility = View.VISIBLE
+            selectDate.setOnClickListener {
+                val datePicker = MaterialDatePicker.Builder.datePicker().apply {
+                    // disable past dates
+                    val constraintsBuilder = CalendarConstraints.Builder()
+                    constraintsBuilder.setValidator(DateValidatorPointForward.now())
+                    setCalendarConstraints(constraintsBuilder.build())
+
+                    // set the minimum selectable date to today's date
+                    val calendar = Calendar.getInstance()
+                    setSelection(calendar.timeInMillis)
+                }.build()
+                
+                requireActivity().supportFragmentManager.let {
+                    datePicker.show(it, Constants.DatePicker)
+                }
+                
+                datePicker.addOnPositiveButtonClickListener { selectedDate ->
+                    try {
                         val dateFormatter = SimpleDateFormat(Constants.dateFormat)
                         val formattedDate = dateFormatter.format(Date(selectedDate))
                         selectedDateText.text = "Selected Date: $formattedDate"
                         patientQueueViewModel.setPassedData(
                             args.doctorUserID,
                             formattedDate,
-                            args.hideSelectedDate
+                            false // Luôn cho phép chọn ngày
                         )
                         patientQueueViewModel.getPatientsListFromFirebase()
+                    } catch (e: Exception) {
+                        Toast.makeText(requireContext(), 
+                            "Error selecting date: ${e.message}", 
+                            Toast.LENGTH_SHORT).show()
                     }
                 }
-            } else {
-                selectDate.visibility = View.GONE
             }
         }
     }
@@ -120,14 +136,24 @@ class PatientQueueFragment : Fragment() {
             setPassedData(
                 args.doctorUserID,
                 args.selectedDate,
-                args.hideSelectedDate
+                false // Luôn cho phép chọn ngày
             )
+            
+            // Hiển thị ngày đã chọn ngay khi fragment được tạo
+            binding.selectedDateText.text = "Selected Date: ${args.selectedDate}"
+            
             doctorUserID.observe(viewLifecycleOwner) {
                 getPatientsListFromFirebase()
-                binding.selectedDateText.text = "Selected Date: ${selectedDate.value}"
             }
             patientsListLiveData.observe(viewLifecycleOwner) {
-                patientQueueAdapter.setData(it as ArrayList<DoctorAppointment>)
+                if (it.isEmpty()) {
+                    binding.noAppointmentText.visibility = View.VISIBLE
+                    binding.appointmentRecyclerview.visibility = View.GONE
+                } else {
+                    binding.noAppointmentText.visibility = View.GONE
+                    binding.appointmentRecyclerview.visibility = View.VISIBLE
+                    patientQueueAdapter.setData(it as ArrayList<DoctorAppointment>)
+                }
             }
         }
     }
