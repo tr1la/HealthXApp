@@ -259,6 +259,7 @@
     <string name="test_result">Kết quả xét nghiệm</string>
     <string name="test_result_hint">ví dụ: 110</string>
     <string name="save_data">Lưu dữ liệu</string>
+    <string name="data_saved_message">Đã lưu dữ liệu thành công!</string>
 
     <!-- Appointment booking date related strings -->
     <string name="date_picker">Chọn ngày</string>

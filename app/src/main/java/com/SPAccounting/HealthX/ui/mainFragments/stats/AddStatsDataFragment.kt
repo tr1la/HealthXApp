@@ -58,7 +58,7 @@ class AddStatsDataFragment : Fragment() {
             }
             isDataSaved.observe(viewLifecycleOwner) {
                 if (it) {
-                    Toast.makeText(context, "Data saved", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, getString(R.string.data_saved_message), Toast.LENGTH_SHORT).show()
                     findNavController().navigateUp()
                 }
             }

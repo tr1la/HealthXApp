@@ -154,7 +154,7 @@ class PatientQueueFragment : Fragment() {
                 } else {
                     binding.noAppointmentText.visibility = View.GONE
                     binding.appointmentRecyclerview.visibility = View.VISIBLE
-                    patientQueueAdapter.setData(it as ArrayList<DoctorAppointment>)
+                patientQueueAdapter.setData(it as ArrayList<DoctorAppointment>)
                 }
             }
         }
