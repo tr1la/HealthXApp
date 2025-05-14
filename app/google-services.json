@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "419453685192",
+    "firebase_url": "https://healthapp-dd556-default-rtdb.firebaseio.com",
+    "project_id": "healthapp-dd556",
+    "storage_bucket": "healthapp-dd556.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419453685192:android:ab4671a08340947dba04fd",
+        "android_client_info": {
+          "package_name": "com.SPAccounting.HealthX"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGQEYjIN5oyz59KGnkuP5sziDWI9aidQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
