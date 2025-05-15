@@ -10,4 +10,4 @@
 - Java: Sử dụng cho một số class đặc biệt (ví dụ: mã hóa AES).
 - Android SDK: Phát triển trên nền tảng Android, sử dụng Android Studio.
 - Firebase: Xác thực, lưu trữ dữ liệu, lưu trữ file (Realtime Database, Auth, Storage).
-# Trải nghiệm ngay với phiên bản APK:  
+# Trải nghiệm ngay với phiên bản APK: [HealthX.apk](https://github.com/tr1la/HealthXApp/blob/main/HealthX.apk) 
