@@ -1,4 +1,4 @@
-## HealthX
+### HealthX
 Ứng dụng kết nối người bệnh và bác sĩ 
 # Tính năng chính:
 - Hệ thống đặt lịch thông minh: Cho phép bệnh nhân tìm kiếm và đặt lịch với bác sĩ theo chuyên khoa.
